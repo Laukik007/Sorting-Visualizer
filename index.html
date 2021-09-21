@@ -11,8 +11,10 @@
 	<header>Sorting Visualizer</header>
 	<div class= "sidePanel">
 		<button id ="GenAry">Generate Array</button>
-		<button id = "CusAry">Custom Array</button>
-		<div></div>
+		<button onclick ="customArray()" id = "CusAry">Custom Array</button>
+		<form onsubmit="return false;">
+			<div id = "inputArray"></div>
+		</form>
 		<input type = "range" min=3 max=15 step =1 >
 		<button onclick="StartStop()" id ="StartStop">Start</button>
 	</div>
