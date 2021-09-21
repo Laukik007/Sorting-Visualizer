@@ -4,22 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Sorting Visualizer</title>
 </head>
 <body>
 	<header>Sorting Visualizer</header>
-	<div class= "side panel">
-		<button>Generate Array</button>
-		<button>Custom Array</button>
+	<div class= "sidePanel">
+		<button id ="GenAry">Generate Array</button>
+		<button id = "CusAry">Custom Array</button>
 		<div></div>
-		<input type = "range" min=2 max=10 step =1 >
-		<button>Start/Stop</button>
+		<input type = "range" min=3 max=15 step =1 >
+		<button onclick="StartStop()" id ="StartStop">Start</button>
 	</div>
 	<div class = "footer">
 		<a>See Algo</a><br>
 		Time Complexity = O(n)
 	</div>
 
-	
+	<script src="js/script.js"></script>
 </body>
 </html>

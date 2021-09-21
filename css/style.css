@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(41, 41, 245);
+    color: white;
+    margin:0%;
+    padding: 5px;
+    font-size: 300%;
+    font-family:  sans-serif,Arial, Helvetica;
+    text-align: center;
+}
+button{
+    margin: 3px;
+    padding: 2px 1px 1px ;
+}
