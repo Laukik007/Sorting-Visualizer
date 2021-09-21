@@ -19,8 +19,6 @@ function StartStop()
         document.getElementById("CusAry").disabled = false;
     }
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 function customArray()
 {   if (cusAry ==0)
     {
@@ -36,9 +34,8 @@ function customArray()
         document.getElementById("inputArray").appendChild(txt); 
         document.getElementById("inputArray").appendChild(btn);
         cusAry =1;
-=======
-=======
->>>>>>> f24ec12c95ff6f19277a753cf4d4b6ede1f52be5
+    }
+}
 
 //to clear the previous randomly genrated array
 function clearBox(elementID) {
@@ -76,9 +73,6 @@ function generatearray(){
 
         arr_ele.appendChild(arr_ele_lable);
         container.appendChild(arr_ele);
-<<<<<<< HEAD
->>>>>>> f24ec12c95ff6f19277a753cf4d4b6ede1f52be5
-=======
->>>>>>> f24ec12c95ff6f19277a753cf4d4b6ede1f52be5
+
     }
 }
