@@ -16,3 +16,18 @@ button{
     margin: 3px;
     padding: 2px 1px 1px ;
 }
+.bars {
+	width: 28px;
+	background-color: #6b5b95;
+	position: absolute;
+	bottom: 0px;
+	transition: 0.2s all ease;
+}
+
+.bars_id {
+	position: absolute;
+	color: black;
+	margin-top: -20px;
+	width: 100%;
+	text-align: center;
+}
