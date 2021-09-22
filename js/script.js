@@ -28,17 +28,31 @@ function customArray()
         txt.pattern = "[0-9]+(,[0-9]+)*";
         txt.title = "Enter numbers seperated by commas";
         txt.placeholder = "Enter numbers seperated by commas";
-        var btn = document.createElement("button")
+        txt.size = "30";
+        var btn = document.createElement("button");
         btn.id = "textBtn";
         btn.innerHTML="Create Array";
+        btn.onclick = function generatecustomarray()
+        { 
+            let x = document.getElementById("textBox").value;
+            const arr = x.split(" ");
+            window.alert(arr);
+        } ;
         document.getElementById("inputArray").appendChild(txt); 
         document.getElementById("inputArray").appendChild(btn);
         cusAry =1;
     }
+    else
+    {
+        cusAry =0;
+        clearBox("inputArray");
+    }
+    
 }
 
 //to clear the previous randomly genrated array
-function clearBox(elementID) {
+function clearBox(elementID) 
+{
     var div = document.getElementById(elementID);
       
     while(div.firstChild) {
@@ -47,7 +61,8 @@ function clearBox(elementID) {
 }
 
 //random genration function 
-function generatearray(){
+function generatearray()
+{
     //clearBox(array);
     clearBox("array");
     for(let i=0; i<20; i++){
@@ -76,3 +91,4 @@ function generatearray(){
 
     }
 }
+  
