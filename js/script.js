@@ -4,11 +4,12 @@ let cusAry = 0;
 function StartStop()
 {
     if(x == false)
-    {             //button is at stop and needs to start
+    {   //button is at stop and needs to start
         x = true;
         document.getElementById("StartStop").childNodes[0].nodeValue="Stop";
         document.getElementById("GenAry").disabled = true;
         document.getElementById("CusAry").disabled = true;
+        document.getElementById("SltBtn").disabled = true;
 
     }
     else{
@@ -17,6 +18,7 @@ function StartStop()
         document.getElementById("StartStop").childNodes[0].nodeValue="Start";
         document.getElementById("GenAry").disabled = false;
         document.getElementById("CusAry").disabled = false;
+        document.getElementById("SltBtn").disabled = false;
     }
 }
 function customArray()
@@ -129,3 +131,8 @@ function generatearray(arr=[])
     }
 }
   
+function getAlgo()
+{
+    var selectAlgo = document.getElementById('selectAlgo').value;
+    console.log(selectAlgo);
+}
