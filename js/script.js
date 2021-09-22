@@ -4,11 +4,12 @@ let cusAry = 0;
 function StartStop()
 {
     if(x == false)
-    {             //button is at stop and needs to start
+    {   //button is at stop and needs to start
         x = true;
         document.getElementById("StartStop").childNodes[0].nodeValue="Stop";
         document.getElementById("GenAry").disabled = true;
         document.getElementById("CusAry").disabled = true;
+        document.getElementById("SltBtn").disabled = true;
 
     }
     else{
@@ -17,6 +18,7 @@ function StartStop()
         document.getElementById("StartStop").childNodes[0].nodeValue="Start";
         document.getElementById("GenAry").disabled = false;
         document.getElementById("CusAry").disabled = false;
+        document.getElementById("SltBtn").disabled = false;
     }
 }
 function customArray()
@@ -35,7 +37,7 @@ function customArray()
         btn.onclick = function generatecustomarray()
         { 
             let x = document.getElementById("textBox").value;
-            const arr = x.split(" ");
+            const arr = x.split(",");
             window.alert(arr);
         } ;
         document.getElementById("inputArray").appendChild(txt); 
@@ -92,3 +94,8 @@ function generatearray()
     }
 }
   
+function getAlgo()
+{
+    var selectAlgo = document.getElementById('selectAlgo').value;
+    console.log(selectAlgo);
+}
