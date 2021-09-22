@@ -35,8 +35,12 @@ function customArray()
         btn.onclick = function generatecustomarray()
         { 
             let x = document.getElementById("textBox").value;
-            const arr = x.split(" ");
+            const arr = x.split(",");
+            //taking the custom values in an array 
             window.alert(arr);
+
+            //calling genratearray with custom values
+            generatearray(arr);
         } ;
         document.getElementById("inputArray").appendChild(txt); 
         document.getElementById("inputArray").appendChild(btn);
@@ -61,33 +65,66 @@ function clearBox(elementID)
 }
 
 //random genration function 
-function generatearray()
+function generatearray(arr=[])
 {
     //clearBox(array);
     clearBox("array");
-    for(let i=0; i<20; i++){
 
-        //return random value in range 1 to 100
-        let value=Math.ceil(Math.random()*100);
+    if(arr.length>0)
+    {
+        for(let i=0; i<arr.length; i++)
+        {
 
-        //creating div element
-        var arr_ele=document.createElement("div");
+            //taking custom values in a variable  to translate to bars
+            let value=arr[i];
 
-        //adding class to 'bars' to div
-        arr_ele.classList.add("bars");
+            //creating div element
+            var arr_ele=document.createElement("div");
 
-        //adding style to div
-        arr_ele.style.height=`${value*3}px`;
-        arr_ele.style.transform=`translate(${i*30}px)`;
+            //adding class to 'bars' to div
+            arr_ele.classList.add("bars");
 
-        //creating lable element for display
-        //size of a particular block
-        var arr_ele_lable=document.createElement("label");
-        arr_ele_lable.classList.add("bars_id");
-        arr_ele_lable.innerText=value;
+            //adding style to div
+            arr_ele.style.height=`${value*30}px`;
+            arr_ele.style.transform=`translate(${i*30}px)`;
 
-        arr_ele.appendChild(arr_ele_lable);
-        container.appendChild(arr_ele);
+            //creating lable element for display
+            //size of a particular block
+            var arr_ele_lable=document.createElement("label");
+            arr_ele_lable.classList.add("bars_id");
+            arr_ele_lable.innerText=value;
+
+            arr_ele.appendChild(arr_ele_lable);
+            container.appendChild(arr_ele);
+        }
+    }
+    else
+    {
+        for(let i=0; i<20; i++)
+        {
+
+            //return random value in range 1 to 100
+            let value=Math.ceil(Math.random()*100);
+
+            //creating div element
+            var arr_ele=document.createElement("div");
+
+            //adding class to 'bars' to div
+            arr_ele.classList.add("bars");
+
+            //adding style to div
+            arr_ele.style.height=`${value*3}px`;
+            arr_ele.style.transform=`translate(${i*30}px)`;
+
+            //creating lable element for display
+            //size of a particular block
+            var arr_ele_lable=document.createElement("label");
+            arr_ele_lable.classList.add("bars_id");
+            arr_ele_lable.innerText=value;
+
+            arr_ele.appendChild(arr_ele_lable);
+            container.appendChild(arr_ele);
+        }
 
     }
 }
