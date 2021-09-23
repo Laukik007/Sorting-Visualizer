@@ -31,15 +31,16 @@ button{
     padding: 2px 1px 1px ;
 }
 .bars {
-	width: 2%;
-	background-color: #6b5b95;
-	position: absolute;
-	bottom: 0%;
-	transition: 0.2s all ease;
+	width: 3%;
+	background-color: #fceb00;
+	display: inline-block;
+    transition: 0.3s all ease;
+    vertical-align: sub;
+    top: 30%;
 }
 
 .bars_id {
-	position: absolute;
+	padding-left: 20%;
 	color: black;
 	margin-top: -20px;
 	width: 100%;
@@ -47,20 +48,19 @@ button{
 }
 
 .sidePanel{
-    background-color: blueviolet;
+    background-color: rgb(231, 25, 214);
     height: 85vh ;
     width:20vw;
 }
 .rightCanvas{
-    background-color: rgba(1, 127, 136, 0.726);
+   
     width:80vw;
     height: 85vh;
     left:20px;
+    display: block;
+
 }
 .array{
-    top: 50%;
-    left: 50%;
-    transform: translateX(50%);
-    transform: translateY(50%);
-
+padding-left: 10vw;
+margin-top: 10%;
 }

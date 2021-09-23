@@ -97,7 +97,7 @@ function generatearray(arr=[])
 
             //adding style to div
             arr_ele.style.height=`${value*1}vh`;
-            arr_ele.style.transform=`translate(${i*130}%)`;
+            arr_ele.style.transform=`translate(${i*20}%)`;
 
             //creating lable element for display
             //size of a particular block
@@ -124,8 +124,8 @@ function generatearray(arr=[])
             arr_ele.classList.add("bars");
 
             //adding style to div
-            arr_ele.style.height=`${value*1}vh`;
-            arr_ele.style.transform=`translate(${i*130}%)`;
+            arr_ele.style.height=`${value*0.5}vh`;
+            arr_ele.style.transform=`translate(${i*20}%)`;
 
             //creating lable element for display
             //size of a particular block
@@ -197,8 +197,8 @@ async function BubbleSort(delay = 100) {
             }
   
             // Changing the color to the previous one
-            bars[j].style.backgroundColor = "#6b5b95";
-            bars[j + 1].style.backgroundColor = "#6b5b95";
+            bars[j].style.backgroundColor = "#fceb00";
+            bars[j + 1].style.backgroundColor = "#fceb00";
             if (x == false)
             {
                 break;
@@ -213,5 +213,10 @@ async function BubbleSort(delay = 100) {
         bars[bars.length - i - 1]
                 .style.backgroundColor = "#13CE66";
     }
+    document.getElementById("StartStop").childNodes[0].nodeValue="Start";
+    document.getElementById("GenAry").disabled = false;
+    document.getElementById("CusAry").disabled = false;
+    document.getElementById("SltBtn").disabled = false;
+
 }
   
