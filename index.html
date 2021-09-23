@@ -8,7 +8,8 @@
 </head>
 <body>
 	<header>Sorting Visualizer</header>
-	<div class= "sidePanel">
+	<div class="container">
+		<div class= "sidePanel">
 
 		<button onclick="generatearray()" id ="GenAry">Generate Array</button>
 		<button onclick ="customArray()" id = "CusAry">Custom Array</button>
@@ -29,12 +30,15 @@
 
 		</div>
 		<button onclick="StartStop()" id ="StartStop">Start</button>
+		</div>
+		<div class = "rightCanvas">
+		<div class ="array" id= "array"></div>
+		</div>
 	</div>
-	<div class = "footer">
-		<a>See Algo</a><br>
+	<footer>
+		<a href = "img/layout_idea.jpg">See Algo</a>
 		Time Complexity = O(n)
-	</div>
-	<div id= "array"></div>
+	</footer>
 
 	<script src="js/script.js"></script>
 </body>

@@ -4,23 +4,37 @@
     box-sizing: border-box;
 }
 header{
+
     background-color: rgb(41, 41, 245);
     color: white;
-    margin:0%;
-    padding: 5px;
     font-size: 300%;
+    vertical-align: middle;
     font-family:  sans-serif,Arial, Helvetica;
     text-align: center;
+    height:10vh;
+    width:100vw;
+    line-height: 10vh;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+footer {
+    bottom: 0; 
+    background-color: green;
+    height:5vh;
+    width:100vw;
+    
 }
 button{
     margin: 3px;
     padding: 2px 1px 1px ;
 }
 .bars {
-	width: 28px;
+	width: 2%;
 	background-color: #6b5b95;
 	position: absolute;
-	bottom: 0px;
+	bottom: 0%;
 	transition: 0.2s all ease;
 }
 
@@ -30,4 +44,23 @@ button{
 	margin-top: -20px;
 	width: 100%;
 	text-align: center;
+}
+
+.sidePanel{
+    background-color: blueviolet;
+    height: 85vh ;
+    width:20vw;
+}
+.rightCanvas{
+    background-color: rgba(1, 127, 136, 0.726);
+    width:80vw;
+    height: 85vh;
+    left:20px;
+}
+.array{
+    top: 50%;
+    left: 50%;
+    transform: translateX(50%);
+    transform: translateY(50%);
+
 }
